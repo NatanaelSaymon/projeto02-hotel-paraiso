@@ -1,0 +1,343 @@
+/* HOME-RESET */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+/* END-RESET */
+
+/* HEADER */
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between; /* ALINHAMENTO HORIZONTAL COM SPACE-BETWEEN, CRIA UM ESPAÇAMENTO NOS ELEMENTOS*/
+    align-items: center; /*ALINHAMENTO VERTICAL*/
+    padding: 20px 50px; /* 20px no top e bottom e 50px nas laterais*/
+    background-color: #fff;
+}
+
+header img{
+    width: 250px;
+}
+
+header nav {
+    display: flex; /*DEIXA OS ELEMENTOS UM DO LADO DO OUTRO*/
+}
+
+header li a {
+    color: #191c03; /*COR DOS ITENS*/
+}
+
+header li {
+    margin: 0 15px; /*ADICIONANDO MARGEM NA LATERAL DOS ITENS*/
+}
+
+header li:first-child { /*FIRST-CHILD: SELECIONA O PRIMEIRO FILHO, OU SEJA, SELECIONA O PRIMEIRO ITEM DO MENU*/
+    margin-left: 0px;
+}
+
+header li:last-child {
+    margin-right: 0px;
+}
+
+/*DEIXANDO O MENU RESPONSIVO BRREAKPOINT */
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+
+    header img{
+        margin-bottom: 15px;
+    }
+}
+
+/*HERO*/
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; /*DEIXA O TEXTO AO MEIO DA IMG*/
+    text-align: center; /*ALINHANDO O TEXTO*/
+    flex-direction: column; /*FAZ COM QUE O H1, H3 E O LINK FIQUE EM COLUNA*/
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+
+.hero h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.hero .btn {
+    background-color: #fff;
+    border-radius: 4px;
+    color: #191c03;
+    padding: 20px 50px; /* 20px NO TOP E NA BASE E 50PX NAS LATERAIS*/
+    text-transform: uppercase; /*DEIXA TODAS AS LETRAS MAIUSCULAS*/
+}
+
+/*DIMINUINDO OS TEXTO PARA MOBIL BRREAKPOINT */
+@media (max-width: 700px){
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* CONHEÇA O HOTEL */
+
+.conheca-o-hotel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.conheca-o-hotel h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 35px;
+    color: #191c03;
+}
+
+.conheca-o-hotel p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #191c03;
+    text-align: center;
+}
+
+.conheca-o-hotel hr {
+    width: 200px;
+    height: 2px;
+    background-color: #191c03;
+    margin-bottom: 70px;
+    border: none;
+}
+
+.conheca-o-hotel .grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conheca-o-hotel .grid li {
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}  
+
+.conheca-o-hotel .grid li.small {
+    flex-basis: 40%;
+}
+
+.conheca-o-hotel .grid li.large {
+    flex-basis: 60%;
+}
+
+/* BRREAKPOINT */ 
+@media (max-width: 700px){
+    .conheca-o-hotel .grid li.small {
+        flex-basis: 100%;
+    }
+
+    .conheca-o-hotel .grid li.large {
+        flex-basis: 100%;
+    }
+}
+
+/*CLASS CARACTERISTICAS*/
+
+.caracteristicas {
+    background-color: #191c03;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.caracteristicas h3 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #fff;
+    text-align: center;
+}
+
+.caracteristicas p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #fff;
+    text-align: center;
+}
+
+.caracteristicas hr {
+    width: 200px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 70px;
+    border: none;
+}
+
+.caracteristicas .grid {
+    width: 100%;
+    display: flex;
+}
+
+.caracteristicas .grid li {
+    padding: 0 30px;
+    text-align: center;
+}
+
+.caracteristicas .grid li i {
+    color: #c3c63b;
+    font-size: 50px;
+    margin-bottom: 30px;
+} 
+
+.caracteristicas .grid li h4 {
+    font-size: 1.5rem;
+    color: #c3c63b;
+    margin-bottom: 50px;
+}
+
+.caracteristicas .grid li p {
+    color: #fff;
+}
+
+/* BRREAKPOINT */ 
+@media (max-width: 850px){
+    .caracteristicas .grid {
+        flex-direction: column;
+    }
+}
+
+/*NEWSLETTER*/
+
+.newsletter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 50px;
+}
+
+.newsletter h3 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #191c03;
+    text-align: center;
+}
+
+.newsletter p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #191c03;
+    text-align: center;
+}
+
+.newsletter hr {
+    width: 200px;
+    height: 2px;
+    background-color: #191c03;
+    margin-bottom: 70px;
+    border: none;
+}
+
+.newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 800px;
+}
+
+.newsletter input {
+    padding: 15px;
+    border: 1px solid #191c03;
+    border-radius: 4px;
+    margin-right: 10px;
+    flex: 1; /*OCUPA A LARGURA DISPONIVEL*/
+}
+
+.newsletter button {
+    padding: 15px;
+    background-color: #c3c63b;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .newsletter input {
+        flex-basis: 100%; /*OCUPA 100% DA LARGURA DA TELA*/
+        margin-bottom: 15px;
+    }
+}
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #191c03;
+    padding: 50px;
+}
+
+footer ul {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+footer ul li {
+    margin-right: 10px;
+}
+
+footer ul li:last-child {
+    margin-right: 0px;
+}
+
+footer ul li a {
+    color: #c3c63b;
+    font-size: 2rem;
+}
+
+footer p {
+    text-align: center;
+    color: #c3c63b;
+}
