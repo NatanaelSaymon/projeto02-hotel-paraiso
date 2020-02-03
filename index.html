@@ -12,7 +12,29 @@
     <script src="https://kit.fontawesome.com/ecc011f1dd.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  </head>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(window).scrollTop() > 300){
+                    $('.seta').css({
+                        "opacity":"1", "pointer-events":"auto"
+                    });
+                }else{
+                    $('.seta').css({
+                        "opacity":"0", "pointer-events":"none"
+                    });
+                }
+            });
+
+            $('.seta').click(function(){
+                $('html').animate({scrollTop:0}, 500);
+            });
+        });
+    </script>
+</head>
 
   <body>
     <header>
@@ -33,7 +55,7 @@
         <h3>"Muito aconchego, conforto, simpatia e alto astral"</h3>
         <a class="btn" href="#">Saiba mais</a>
     </section>
-
+    <i class="fas fa-chevron-up seta"></i>
     <!-- SESSÃO DE SAIBA MAIS -->
     <section class="conheca-o-hotel" id="">
         <h3>Conheça o Hotel Paraíso!</h3>

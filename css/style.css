@@ -103,7 +103,7 @@ header li:last-child {
     text-transform: uppercase; /*DEIXA TODAS AS LETRAS MAIUSCULAS*/
 }
 
-/*DIMINUINDO OS TEXTO PARA MOBIL BRREAKPOINT */
+/*DIMINUINDO OS TEXTO PARA MOBILE BREAKPOINT */
 @media (max-width: 700px){
     .hero h1 {
         font-size: 2.5rem;
@@ -111,6 +111,40 @@ header li:last-child {
 
     .hero h3 {
         font-size: 1.5rem;
+    }
+}
+
+
+/* SETA */
+
+i.seta{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 35px;
+    background-color: #c3c63b;
+    color: #191c03;
+    padding: 7px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease-in-out;
+}
+
+i.seta:hover{
+    background-color: #adaf38;
+    transition: .5s;
+}
+
+@media screen and (max-width: 768px){
+    i.seta{
+        font-size: 25px;
+    }
+
+    i.seta:hover{
+        background-color: #adaf38;
+        transition: .5s;
     }
 }
 

@@ -1,1 +1,3 @@
-Projeto Hotel Paraiso https://natanaelsaymon.github.io/Projeto_02/
+Projeto Hotel Paraiso
+
+ https://natanaelsaymon.github.io/Projeto_02/
