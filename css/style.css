@@ -158,7 +158,20 @@ header li:last-child {
     background-clip: content-box;
     background-size: cover;
     background-position: center;
-}  
+}
+
+.bg-01{
+    background-image: url('../img/itacare-01.jpg');
+}
+.bg-02{
+    background-image: url('../img/itacare-02.jpg');
+}
+.bg-03{
+    background-image: url('../img/itacare-03.jpg');
+}
+.bg-04{
+    background-image: url('../img/itacare-04.jpg');
+}
 
 .conheca-o-hotel .grid li.small {
     flex-basis: 40%;
