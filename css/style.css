@@ -215,7 +215,7 @@ i.seta:hover{
     flex-basis: 60%;
 }
 
-/* BRREAKPOINT */ 
+/* BREAKPOINT */ 
 @media (max-width: 700px){
     .conheca-o-hotel .grid li.small {
         flex-basis: 100%;
