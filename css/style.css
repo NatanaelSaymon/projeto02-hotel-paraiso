@@ -350,7 +350,7 @@ footer ul li a {
     font-size: 2rem;
 }
 
-footer p {
+footer p, a{
     text-align: center;
     color: #c3c63b;
 }
