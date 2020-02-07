@@ -22,6 +22,7 @@ a:hover {
 }
 /* END-RESET */
 
+
 /* HEADER */
 header {
     width: 100%;
@@ -59,8 +60,8 @@ header li:last-child {
     margin-right: 0px;
 }
 
-/*DEIXANDO O MENU RESPONSIVO BRREAKPOINT */
 
+/*DEIXANDO O MENU RESPONSIVO BRREAKPOINT */
 @media (max-width: 700px){
     header{
         flex-direction: column;
@@ -71,12 +72,12 @@ header li:last-child {
     }
 }
 
-/*HERO*/
 
+/*HERO*/
 .hero {
     background-image: url(../img/hero.jpg);
     background-size: cover;
-    min-height: 100vh;
+    min-height: 100vh; /*Tamanho da img*/
     color: #fff;
     display: flex;
     justify-content: center;
@@ -103,6 +104,7 @@ header li:last-child {
     text-transform: uppercase; /*DEIXA TODAS AS LETRAS MAIUSCULAS*/
 }
 
+
 /*DIMINUINDO OS TEXTO PARA MOBILE BREAKPOINT */
 @media (max-width: 700px){
     .hero h1 {
@@ -115,8 +117,8 @@ header li:last-child {
 }
 
 
-/* SETA */
 
+/* SETA */
 i.seta{
     position: fixed;
     bottom: 40px;
@@ -148,8 +150,8 @@ i.seta:hover{
     }
 }
 
-/* CONHEÇA O HOTEL */
 
+/* CONHEÇA O HOTEL */
 .conheca-o-hotel {
     display: flex;
     flex-direction: column;
@@ -215,6 +217,7 @@ i.seta:hover{
     flex-basis: 60%;
 }
 
+
 /* BREAKPOINT */ 
 @media (max-width: 700px){
     .conheca-o-hotel .grid li.small {
@@ -226,8 +229,8 @@ i.seta:hover{
     }
 }
 
-/*CLASS CARACTERISTICAS*/
 
+/*CLASS CARACTERISTICAS*/
 .caracteristicas {
     background-color: #191c03;;
     display: flex;
@@ -284,15 +287,16 @@ i.seta:hover{
     color: #fff;
 }
 
-/* BRREAKPOINT */ 
+
+/* BREAKPOINT */ 
 @media (max-width: 850px){
     .caracteristicas .grid {
         flex-direction: column;
     }
 }
 
-/*NEWSLETTER*/
 
+/*NEWSLETTER*/
 .newsletter{
     display: flex;
     align-items: center;
